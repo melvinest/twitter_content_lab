@@ -1,0 +1,47 @@
+{
+  "name": "twitter_content_lab",
+  "version": "1.0.0",
+  "description": "app that display tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "build": "webpack",
+    "build-watch": "webpack",
+    "nodemon": "nodemon server/index.js",
+    "heroku-postbuild": "webpack"
+  },
+  "keywords": [
+    "twitter"
+  ],
+  "author": "melvin estrada",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "get-twitter-bearer-token": "^1.0.0",
+    "moment": "^2.22.2",
+    "path": "^0.12.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
